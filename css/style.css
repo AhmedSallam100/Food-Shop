@@ -647,6 +647,7 @@ hr {
 /*-----------------Start Cart-----------------*/
 .img-nopro {
   width: 600px;
+  animation: up-down 3s infinite;
 }
 .cart-em {
   display: flex;
@@ -812,3 +813,16 @@ hr {
   }
 }
 /*-----------------End Resbonsive-----------------*/
+/*-----------------Start Animation-----------------*/
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*-----------------End Animation-----------------*/
